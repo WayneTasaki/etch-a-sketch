@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+/* ------ */
+/* SLIDER */
+/* ------ */
+.slider-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.value-container {
+  margin-bottom: .1rem;
+}
+
+#demo {
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  background: white; 
+  height: .5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  cursor: pointer;
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: aqua;
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  cursor: pointer;
+  appearance: none;
+  height: .8rem;
+  width: .8rem;
+  background-color: black;
+  border-radius: 50%;
+  border: none;
+}
+
+.game-board {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  background-color: #fafafa;
+  border: 1px solid lightgrey;
+
+  /* gap: 1px; */
+  /* ^^ possibly remove */
+}
