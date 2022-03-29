@@ -1,4 +1,4 @@
-<div align="center"><img src="etch-a-sketch.gif"></img></div>
+<div align="center"><img src="etch-a-sketch.gif" width="400px"></img></div>
 <h1 align="center">Meet Landing Page</h1>
 
 <div align="center">
