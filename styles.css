@@ -61,7 +61,4 @@ body {
   display: grid;
   background-color: #fafafa;
   border: 1px solid lightgrey;
-
-  /* gap: 1px; */
-  /* ^^ possibly remove */
 }
