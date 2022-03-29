@@ -13,16 +13,18 @@
   <header><p id="header">Etch-a-Sketch</p></header>
   <main>
     <section id="control-section">
-      <button onclick="toggleColor('black', 'none')">Black</button>
-      <button onclick="toggleColor(defaultBgColor, defaultBorderStyle)">Eraser</button>
-      <button onclick="toggleColor('random', 'none')">Random</button>
+      <button class="highlight-hover" onclick="toggleColor('black', 'none')" id="black-button">Black</button>
+      <button class="highlight-hover" onclick="toggleColor(defaultBgColor, defaultBorderStyle)">Eraser</button>
+      <button class="highlight-hover" onclick="toggleColor('random', 'none')">Random</button>
       <button onclick="clearBoard()">Clear</button>
-      <div class="slider-container">
+    </section>
+    <section id="slider-section">
+      <div class="slider-wrapper">
         <div class="value-container">
           <span id="value-title">Size:</span>
           <span id="output">1x1</span>
         </div>
-        <input type="range" min="1" max="100" value="0" class="slider" id="myRange" onchange="changeSize(this.value)">
+        <input type="range" min="1" max="100" value="1" class="slider" id="myRange" onchange="changeSize(this.value)">
       </div>
     </section>
 

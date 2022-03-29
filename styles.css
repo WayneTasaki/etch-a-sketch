@@ -1,17 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 body {
   background-color: #fafafa;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#control-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-style: none;
+  padding: .5em 1.25em;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.highlight {
+  background-color: rgb(188, 188, 188);
+}
+
 /* ------ */
 /* SLIDER */
 /* ------ */
-.slider-container {
+.slider-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,24 +60,21 @@ body {
   margin-bottom: .1rem;
 }
 
-#demo {
-
-}
-
 .slider {
   -webkit-appearance: none;
   background: white; 
   height: .5rem;
-  border: 1px solid black;
+  border: 1px solid rgb(144, 144, 144);
   border-radius: 10px;
 }
 
 .slider::-webkit-slider-thumb {
   cursor: pointer;
   appearance: none;
-  height: 1rem;
-  width: 1rem;
-  background-color: aqua;
+  height: .8rem;
+  width: .8rem;
+  background-color: rgb(144, 144, 144);
+  border-radius: 50%;
   border: none;
 }
 
@@ -50,15 +83,18 @@ body {
   appearance: none;
   height: .8rem;
   width: .8rem;
-  background-color: black;
+  background-color: rgb(144, 144, 144);
   border-radius: 50%;
   border: none;
 }
 
+/* Game Board */
 .game-board {
   width: 600px;
   height: 600px;
   display: grid;
   background-color: #fafafa;
   border: 1px solid lightgrey;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.17); 
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.17);
 }

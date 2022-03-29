@@ -5,7 +5,6 @@ let color = 'black'
 noBorderStyle = 'none'
 
 
-
 function fillBoard(size) {
   let squares = gameBoard.querySelectorAll('div');
   squares.forEach(div => div.remove())
@@ -71,3 +70,21 @@ function clearBoard() {
   squares.forEach((div) => div.style.border = defaultBorderStyle);
 }
 // Clears the board
+// ----------------------
+
+
+function addRemoveHighlight(){
+  if(currentbtn){
+    currentbtn.classList.remove("highlight");
+  }
+  this.classList.add("highlight");
+  currentbtn=this;
+}  
+
+let controlButtons = document.getElementsByClassName('highlight-hover');
+for (var i = controlButtons.length - 1; i >= 0; i--) {
+		var currentbtn;
+		controlButtons[i].addEventListener('click', addRemoveHighlight)
+};
+// Function that keeps a button active and highlighted until another is clicked. Mainly just a UX detail
+// -----------------------
