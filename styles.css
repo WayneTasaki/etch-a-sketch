@@ -17,11 +17,17 @@ main {
   align-items: center;
 }
 
-header p {
-  padding-top: 2rem;
+#header {
+  padding-top: 1rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
+}
+
+#directions {
+  text-align: center;
+  font-weight: 300;
+  padding-top: .5rem;
 }
 
 #control-section {
@@ -33,7 +39,7 @@ header p {
 
 button {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   border-style: none;
   padding: .5em 1.25em;
   border-radius: .5rem;
@@ -53,11 +59,11 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .value-container {
-  margin-bottom: .1rem;
+  margin-bottom: .2rem;
 }
 
 .slider {
