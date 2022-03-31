@@ -7,7 +7,7 @@
   </h3>
 </div>
 <div align="center">
-   Solution for a project from  <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
+   Solution for a project from  <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
 </div>
 <br>
 
